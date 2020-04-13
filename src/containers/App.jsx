@@ -7,10 +7,11 @@ import Education from '../components/Education'
 import Experience from '../components/Experience'
 import Certificates from '../components/Certificates'
 import Skills from '../components/Skills'
+import { render } from 'react-dom'
 
 const App = () => {
     return (
-        <Main>
+        < Main >
             <Sidebar>
                 <About />
             </Sidebar>
@@ -20,8 +21,12 @@ const App = () => {
                 <Certificates />
                 <Skills />
             </Info>
-        </Main>
+        </Main >
     )
 }
+
+
+
+
 
 export default App
