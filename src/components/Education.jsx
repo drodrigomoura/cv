@@ -1,12 +1,19 @@
 import React from 'react'
 
-const Education = () => (
+const Education = props => (
     <div className="Education">
         <div className="Education-container">
-            <div className="Education-item">
-                <h3>UGD - Ingenieria de Software</h3>
-                <p>Aprendi temas relacionados a la informatia</p>
-            </div>
+            {
+                props.data.map((edu, index) => (
+                    <div className="Education-item" key={`Edu-${index}`}>
+                        <h3>{edu.degree} @ {edu.institution}
+                            <span>{edu.starDate} - {edu.endDate}</span>
+                        </h3>
+                        <p>{edu.description}</p>
+                    </div>
+                ))
+            }
+
         </div>
     </div>
 )
