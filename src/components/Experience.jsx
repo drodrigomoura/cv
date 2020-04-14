@@ -13,9 +13,6 @@ const Experience = props => (
                     </div>
                 ))
             }
-
-
-
         </div>
     </div>
 )
