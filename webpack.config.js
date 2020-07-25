@@ -34,6 +34,5 @@ module.exports = {
             file: "./index.html"
         }),
         new FaviconsWebpackPlugin('./public/icon.png'),
-        
     ]
 }
